@@ -4469,3 +4469,79 @@ from unittest import result
 #     print(0)
 # else:
 #     print(total)
+
+
+
+# def distance(x1, y1, x2, y2):
+#     return round(((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5, 3)
+
+# x1, y1, x2, y2 = [int(input()) for _ in range(4)]
+# print(distance(x1, y1, x2, y2))
+
+
+# from functools import reduce
+# def factorial(n):
+#     return reduce(lambda x, y: x * y, [int(i) for i in range(1, n + 1)])
+#
+# print(factorial(int(input())))
+
+
+# Задача «Делители числа»
+# Напишите функцию dividers(n), которая по заданному натуральному числу n находит все его делители и возвращает
+# список из них. Для заданного числа выведите всего его делители в порядке возрастания, разделяя значения пробелами.
+
+# def dividers(n):
+#     return ' '.join([str(i) for i in range(1, n + 1) if n % i == 0])
+#
+# print(dividers(int(input())))
+
+
+
+# Задача «Простое число»
+# Напишите функцию isprime(n), которая по заданному натуральному числу n > 1 возвращается True, если число является
+# простым, и False иначе. Для заданного числа выведите результат функции.
+# Простым является число, которое делится только на 1 и само себя. Число 1 не является ни простым, ни составным.
+
+
+# def isprime(n):
+#     for i in range(2, n):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# n = int(input("Введите натуральное число: "))
+# print(isprime(n))
+
+
+
+# Задача «Сумма арифметической прогрессии»
+# Напишите функцию arithmetic_progression(a, d, n), которая по заданным целым числам a и d, а также натуральному числу
+# n вычисляет сумму n первых членов арифметической прогрессии с a1 = a и разностью, равной d. Значения a,d,n записаны
+# в одной строке через пробел.
+
+# def arithmetic_progression(a, d, n):
+#     return n * (2 * a + (n - 1) * d) // 2
+
+# print(arithmetic_progression(1, 2, 3))
+
+
+
+# Задача «Медиана»
+# Напишите функцию median(nums), которая принимает список из целых значений и вычисляет их медиану.
+# Используя эту функцию вычислите медиану заданных значений. В случае, если значение не целое, округлите его до
+# целого числа используя функцию round().
+
+# def mediana(nums):
+#     return round(sum(nums) / len(nums))
+
+# print(mediana([int(i) for i in input().split()]))
+
+
+
+# def check(s):
+#    for i in range(1, len(s)):
+#       if s[i] == s[i - 1]:
+#          return False
+#    return True
+#
+# print(check(input()))
